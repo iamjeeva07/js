@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Strings</title>
+</head>
+<body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+    <div id="result5"></div>
+    <div id="result6"></div>
+    <div id="result7"></div>
+    <div id="result8"></div>
+    <div id="result9"></div>
+    <div id="result10"></div>
+    <div id="result11"></div>
+    <div id="result12"></div>
+    <div id="result13"></div>
+    <div id="result14"></div>
+    <div id="result15"></div>
+    <div id="result16"></div>
+    <div id="result17"></div>
+    <div id="result18"></div>
+    <div id="result19"></div>
+    <div id="result20"></div>
+    <div id="result21"></div>
+    <div id="result22"></div>
+    <div id="result23"></div>
+    <div id="result24"></div>
+    <div id="result25"></div>
+    <div id="result26"></div>
+    <div id="result27"></div>
+    <div id="result28"></div>
+    <div id="result29"></div>
+    <div id="result30"></div>
+    <div id="result31"></div>
+
+
+    <script>
+        let str1="once upon a time there lived a ghost";
+        let str2="  feel pain, accept pain and know pain  ";
+        let price="Rs.10";
+        document.getElementById("result1").innerHTML=str1+str2; // to concatenate
+        document.getElementById("result2").innerHTML=str1.concat(str2); // to concatenate using method
+        document.getElementById("result3").innerHTML=str1.concat("(separator)",str2);  // to concatenate using method with multiple strings
+        document.getElementById("result4").innerHTML=str1.slice(4,10); // to split and get particular data using index no's
+        document.getElementById("result5").innerHTML=str1.slice(-4); // to split and get particular data using index no's from last
+        document.getElementById("result6").innerHTML=str1.substring(4,10); // this also works like slice, but negative not work
+        document.getElementById("result7").innerHTML=str1.substr(4,10); //  it used to get starting to n number of character after that , senocnd values shows length 
+        document.getElementById("result8").innerHTML=str1.substr(-4); // it used to get starting to n number of character after that , senocnd values shows length 
+        document.getElementById("result9").innerHTML=str2.replace("pain","happy");  // it find word from string and replace it , for the first element only
+        document.getElementById("result10").innerHTML=str2.replaceAll("pain","happy");  // it find words and replace all
+        document.getElementById("result11").innerHTML=str1.toUpperCase(); // to change to upper case
+        document.getElementById("result12").innerHTML=str2.toLowerCase(); // to change to lower case
+        document.getElementById("result13").innerHTML=str1.length; // to find the length of the string 
+        document.getElementById("result14").innerHTML=str2.trim(); // to trim extra space in front and back
+        document.getElementById("result15").innerHTML=str2.trimStart(); //  to trim extra space in front 
+        document.getElementById("result16").innerHTML=str2.trimEnd(); // to trim extra space in  back
+        document.getElementById("result17").innerHTML=price.padEnd(7,'0'); // to add a specific chars till the index mentioned length in end
+        document.getElementById("result18").innerHTML=price.padStart(10,"j"); // to add a specific chars till the index mentioned length in start
+        document.getElementById("result19").innerHTML=str1[2]; // get a character using index no
+        document.getElementById("result20").innerHTML=str1.charAt(2); // get a character using index no
+        document.getElementById("result21").innerHTML=str1.charCodeAt(2); // get unicode value of char using index no
+        document.getElementById("result22").innerHTML=str1.indexOf("e"); // get index of char if it found give its position or show -1 as value
+        document.getElementById("result23").innerHTML=str1.indexOf("z"); // get index of char if it found give its position or show -1 as value
+        document.getElementById("result24").innerHTML=str1.lastIndexOf("e"); // to get the last index of 'e' char  in string
+        document.getElementById("result25").innerHTML=str1.lastIndexOf("z"); // to get the last index of 'e' char  in string if not found showing -1
+        document.getElementById("result26").innerHTML=str2.search("pain"); // search the word if found return its startng index
+        document.getElementById("result27").innerHTML=str2.search("painx"); // search the word if found return its startng index, if not found showing -1
+        document.getElementById("result28").innerHTML=str1.includes("ghost"); // check the word if found in string  return true
+        document.getElementById("result29").innerHTML=str1.includes("ghostx"); // check the word if not found in string return false
+        document.getElementById("result30").innerHTML=str1.startsWith("o"); // to get the last index of 'e' char  in string if not found showing -1
+        document.getElementById("result31").innerHTML=str1.endsWith("z"); // to get the last index of 'e' char  in string if not found showing -1
+    </script>
+</body>
+</html>
