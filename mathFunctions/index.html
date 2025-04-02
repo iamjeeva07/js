@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Math</title>
+</head>
+<body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+    <div id="result5"></div>
+    <div id="result6"></div>
+    <div id="result7"></div>
+    <div id="result8"></div>
+    <div id="result9"></div>
+    <div id="result10"></div>
+    <div id="result11"></div>
+    <div id="result12"></div>
+    <div id="result13"></div>
+    <div id="result14"></div>
+    <div id="result15"></div>
+    <div id="result16"></div>
+
+    <script>
+        document.getElementById("result1").innerHTML=Math.round(5.2); // get round value
+        document.getElementById("result2").innerHTML=Math.floor(5.8); // get point before full value
+        document.getElementById("result3").innerHTML=Math.ceil(5.1); // get next full value
+        document.getElementById("result4").innerHTML=Math.round(5.8); // get round value
+        document.getElementById("result5").innerHTML=Math.sqrt(5); // get sqrt value
+        document.getElementById("result6").innerHTML=Math.abs(-5.2); // get absolute value chnages - to + value
+        document.getElementById("result7").innerHTML=Math.pow(5,2);  // get power value first one is base , sencond value is power
+        document.getElementById("result8").innerHTML=Math.min(5,8,7,6,3,2);  // get min value
+        document.getElementById("result9").innerHTML=Math.max(5,8,7,6,3,2);  // get max value
+        document.getElementById("result10").innerHTML=Math.random(); // get random value
+        document.getElementById("result11").innerHTML=Math.random()*6; // get random  value between 0 and 6
+        document.getElementById("result12").innerHTML=Math.floor(Math.random()*6); // get random  value full no 0 to 5
+        document.getElementById("result13").innerHTML=Math.floor(Math.random()*6)+1; // get random  value full no 1 to 6
+        document.getElementById("result14").innerHTML=Math.floor(Math.random()*100)+1; // get random  value full no 0 to 5
+        document.getElementById("result15").innerHTML=Math.PI; // get pi value from properties
+        document.getElementById("result16").innerHTML=Math.E; // get E value from properties
+    </script>
+</body>
+</html>
