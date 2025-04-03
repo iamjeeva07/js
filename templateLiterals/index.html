@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+    <div id="result5"></div>
+
+
+
+    <script>
+        let firstname="jeeva";
+        let lastname="D";
+        let city="chennai";
+
+        document.getElementById("result1").innerHTML= firstname +" "+ lastname+" lives in "+ city;
+        document.getElementById("result2").innerHTML= firstname + lastname + "lives in" + city; //if we dont addd space it result like this
+        
+        // using literals
+
+        document.getElementById("result3").innerHTML =`${firstname} ${lastname} lives in ${city}`;// this will manage space like we given
+
+        // mutline string  using backtick
+        document.getElementById("result4").innerHTML=`happy
+        birthday`;
+
+       //  using ecmas script (ES6) we can write single quotes amd double quotes in side the strings to display correcty wiythou any error 
+       document.getElementById("result5").innerHTML=` my cat's name is "gojo"`; //writing single quotes indide single quotes or double inside double causing errors resolved by this   
+
+    </script>
+</body>
+</html>
