@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[5,8,10,7,9,11];
+
+        arr.splice(3,3,17,19,111); // to replace
+        console.log(arr);
+        arr.unshift(100);// to add value at first
+        console.log(arr);
+        
+        arr.splice(6,0,200) //to add value at last before
+        console.log(arr);
+
+        arr.push(1000);// to add value at last
+        console.log(arr);
+        console.log(arr.length) // to fint no of values in array
+        arr.splice(4,1,0)
+        console.log(arr); //to add 0 at middle
+    </script>
+</body>
+</html>

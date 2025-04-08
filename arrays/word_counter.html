@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count no of Words</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Count no of Words</h2>
+        <div class="inputdiv">
+           <textarea type="text" id="input"  placeholder="enter sentence" cols="50" rows="20"></textarea>
+        </div>
+        <div>
+            <button type="submit" onclick="convert()" >Count Words</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script>
+        function convert(){
+        let para=document.getElementById("input").value;
+        let paraarr= para.split(" ");
+        let result=paraarr.length;
+        document.getElementById("result").innerHTML=result +" Words";
+        }
+        
+    </script>
+</body>
+</html>
