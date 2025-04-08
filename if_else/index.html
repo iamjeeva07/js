@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else</title>
+</head>
+<body>
+    <script>
+        let pass= false;
+
+        if(pass)
+        console.log("your are logged in");
+        else
+        console.log("error")  // for single statemeny dont need {} this brakets
+
+
+        let age=65;
+        let gender="female"
+
+        if(age>=60 && gender ==='female'){
+            console.log("60% discount");
+        }else{
+            console.log("no discount"); 
+        }
+
+
+        // using ternary operator
+
+
+        discount=(age>=60 && gender==='female')?"60% discount":"no discount";
+        console.log(discount);
+    </script>
+</body>
+</html>
