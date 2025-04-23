@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc without button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>calc without button</h2>
+        <div class="inputdiv">
+           <input type="text"  id="input" oninput="sho()" placeholder="eg:1+3,  5-2,  2*5,  2/2">
+        </div>
+    </div>
+
+    <script>
+        let value=document.getElementById('input').value;
+        let valuearr=value.split("+");
+       
+        let operant1=Number(valuearr[0]);
+        let operator=valuearr[1];
+        let operant2=Number(valuearr[2]);
+        alert(operant1);
+
+        let resultdiv=document.createElement('div');
+        resultdiv.id='result';
+        document.getElementById('wrapper').appendChild(resultdiv)
+
+        value.addEventListener('input',show);
+
+        function show(){ 
+            
+        }
+         
+        document.getElementById('result').innerHTML="hiii";
+
+       
+
+
+    </script>
+</body>
+</html>
