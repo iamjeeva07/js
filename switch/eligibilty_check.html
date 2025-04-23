@@ -3,26 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>city stats</title>
+    <title>Eligibility of Qualification</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wrapper">
-        <h2>city stats</h2>
+        <h2>Qualification</h2>
         <div class="inputdiv">
-           <select   id="input">Select city
-            <option value="chennai">chennai</option>
-            <option value="delhi">delhi</option>
-            <option value="andhra">andhra </option>
-            <option value="hydrabhad">hydrabhad </option>
-           </select>
+           <input type="radio"  name="input" value="inliterated">
+           <label for="" style="color:white">inliterated</label>
+           <br>
+           <input type="radio"  name="input" value="sslc">
+           <label for="" style="color:white">sslc</label>
+           <br>
+
+           <input type="radio"  name="input" value="hsc">
+           <label for="" style="color:white">hsc</label>
+           <br>
+
+           <input type="radio"  name="input" value="ug">
+           <label for="" style="color:white">ug</label>
+           <br>
+
+           <input type="radio"  name="input" value="pg">
+           <label for="" style="color:white">pg</label>
+           <br>
         </div>
-        <div>
-            <button type="submit" >Show stats</button>
-        </div>
-        
     </div>
 
-    <script src="script.js"></script>
+    <script>
+
+        
+
+       let radios= document.getElementsByName("input");
+
+       for(let i=0;i<radios.length;i++){
+              radios[i].addEventListener("change",show);
+       }
+
+
+        function show(){
+            let selected='';
+            let op;
+            for(let i=0;i<radios.length;i++){
+                if(radios[i].checked){
+                    selected=radios[i].value;
+                }
+            }
+            
+            switch(selected){
+                case "inliterated":
+                    op="not eligible";
+                    break;
+                case "sslc":
+                    op="still not eligible";
+                    break;
+                case "hsc":
+                    op="eligible level1";
+                    break;
+                case "ug":
+                    op="eligible level2";
+                    break;
+                case "pg":
+                    op="eligible level3";
+                    break;
+                default:
+                    op="select anything";
+
+            }
+ 
+              
+            document.getElementById("result").innerHTML=op ;
+        }
+        let resdiv=document.createElement('div');
+        resdiv.id="result";
+        document.getElementById("wrapper").appendChild(resdiv);
+       
+      
+    </script>
 </body>
 </html>
