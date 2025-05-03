@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let item={
+            name:'jeeva',
+            email:'jeeeva@gmail.com',
+            pass:1234,
+            cate:['cat1','cat2'],
+            dimenstion:{
+                height:10,
+                breath:20,
+                lenngth:30
+            },
+            show:function(){
+                 console.log("heloooo")
+            },
+            show2(){
+                console.log("hiiiiii")
+            }
+        }
+
+        console.log(item.name);
+        // call through . notration
+        console.log(item.dimenstion.height);
+        // call through quarebraket notation
+        console.log(item.dimenstion['height']);
+    //    reasiign vvalues in . notation 
+         item.name="j";
+         item.dimenstion.height="50";
+         item.cate[0]='kk'
+         console.log(item.name);
+         console.log(item.dimenstion.height);
+         console.log(item.cate[0]);
+
+         //    resiign values in [] notation 
+         
+
+         item.dimenstion['height']="50";
+         item.cate[1]='jj'
+         console.log(item.dimenstion['height']);
+         console.log(item.cate[1]);
+
+        let item2=new Object;
+
+        item2.name='valluvan';
+        item2.email='valluvan@gmail.com';
+        item2.pass=`0000`;
+
+        console.log(item2.name);
+
+        item.show();
+        item.show2();
+    </script>
+</body>
+</html>

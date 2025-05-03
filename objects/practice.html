@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+            name:"jeeva",
+            email:"jeeva@gmail.com",
+            pass:1234,
+            access(){
+                console.log(`${user.name},${user.email},${user.pass}`);
+            },
+            modify(){
+                user.name='j'
+                user.email='j@gmail.com'
+                user.pass='00000'
+                console.log(`${user.name},${user.email},${user.pass}`);
+            }
+        }
+
+        
+
+        user.access();
+        user.modify();
+        user.access();
+    </script>
+</body>
+</html>
