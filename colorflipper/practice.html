@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown data </title>
+</head>
+<body>
+    <form id="form" action="">
+
+       <select name="sel" id="sel">
+
+       </select>
+
+        <button type="submit" id="btn">submit</button>
+    </form>
+
+    <script>
+        let form=document.getElementById("form");
+        let arr=['cs','bca','it','ece','eee'];
+        let sel=document.getElementById("sel");
+
+       for(let i=0;i<arr.length;i++){
+         let option=document.createElement("option");
+        option.value=arr[i];
+        option.textContent=arr[i];
+        sel.appendChild(option);
+       }
+
+       let btn=document.getElementById("btn");
+
+       btn.addEventListener("click",function(){
+       
+        alert( sel.value);
+       })
+    
+
+    </script>
+</body>
+</html>
