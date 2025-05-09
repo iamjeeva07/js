@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    // for loop
+
+    for(let i=1;i<=5;i++){
+        console.log("joo");
+    }
+
+    for(let i=1;i<=5;i++){
+        console.log(i);
+    }
+
+    // get reverse value
+    for(let i=10;i>=1;i--){
+        console.log(i);
+    }
+
+
+    // while loop
+     let j=1;
+    while(j<=5){
+        console.log("whilee lopp",j)
+        j++;
+    }
+
+
+    // while loop reverse
+    let j1=10;
+    while(j1>=1){
+        console.log("whilee loop reverse",j1)
+        j1--;
+    }
+
+
+    
+    // do while loop
+    let j2=0;
+    do{
+        console.log("do whilee lopp",j2)
+        j2--;
+    }while(j2>=1);
+
+
+    // break
+
+    while(true){
+     let num=Number(prompt("enter a number"));
+
+     if(!isNaN(num)){
+        break;
+     }
+    }
+
+
+    // continue
+    let k = 1;
+while (k <= 10) {
+    
+
+    k++;
+    if(k % 3 == 0)
+    continue
+
+    console.log("continue", k);
+}
+
+let arr=["j",'k','n'];
+
+// for....of run over all arr values
+for(let letter of arr){
+    console.log(letter);
+}
+
+let obj={
+    name:"j",
+    age:23,
+}
+// for....in run over all obj values 
+for(let data in obj){
+    console.log(obj[data])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>
