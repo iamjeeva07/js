@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hiii</h1>
+
+    <select name="select" id="select">
+        <option value="">select</option>
+    </select>
+     <script>
+        function greetconsole(name){
+            console.log("hello"+ name)
+        }
+
+        function greetheading(name){
+
+            let heading=document.querySelector("h1");
+            heading.innerHTML="hello" + name;
+
+        }
+
+        function greet(callback){
+            callback("jeeva")
+        }
+
+
+        // greet(greetconsole);
+        
+        // greet(greetheading);
+
+        greet(name=>  {
+
+let heading=document.querySelector("h1");
+heading.innerHTML="hello" + name;
+
+}
+)
+
+
+
+// foreach 
+
+arr=['jeeva','valluvan','aravind'];
+
+arr.forEach(print)
+
+function print(val){
+    console.log(val);
+}
+
+arr.forEach((val) => console.log(val.toUpperCase()))
+
+arr.forEach((val,index,arr) => {
+        arr[index]=val.toUpperCase();
+
+        
+})
+
+console.log(arr)
+
+
+
+arr2=['it','ece','eee','btech'];
+
+arr2.forEach(val=>{
+    const opt=document.createElement("option");
+    opt.textContent=val;
+    opt.value=val;
+    document.getElementById("select").appendChild(opt);
+})
+
+
+
+     </script>
+</body>
+</html>
