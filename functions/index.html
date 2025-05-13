@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ispositive(num){
+            return num>0;
+        }
+
+        console.log(ispositive(5));
+
+     
+        show();
+        function show(){
+            console.log("hiiii")
+        }
+        function add(a,b){
+            return a+b;
+        }
+
+        console.log(show)
+
+
+        function prefix(name="mr"){ // if no value passes by argument it takes defau;t value 
+            return name;
+        }
+        console.log(prefix("jeeva"));
+
+        function factorial(n){
+            if(n==1)
+            return 1
+
+            return n*factorial(n-1);
+        }
+
+        console.log(factorial(5))
+
+
+        let iseven= function (num){
+            return num%2==0
+        }
+
+        console.log(iseven(6))
+
+        let arr =[1,2,3,4,5,5]
+         
+        let sum=function(arr){
+            let sum=0
+               for(let ar of arr){
+                  sum+=ar
+               }
+            return sum
+        }
+
+        console.log(sum(arr))
+
+
+        // arrow function 
+        let volume=(l,b,h) => {return l*b*h}
+        console.log(volume(3,1,2))
+
+  let arr2 =[2,3,4,1];
+
+        let sum2 =(arr) =>{
+            let sum=0
+               for(let ar of arr){
+                  sum+=ar
+               }
+            return sum
+        }
+
+        console.log(sum2(arr2));
+
+
+        let area = r => Math.PI*r*r;
+        console.log(area(5))
+
+
+        // variable argument 
+
+        let prod=function(...args){
+            result=1;
+            for(let val of args){
+                result *= val;
+            }
+            return result
+        }
+        console.log(prod(1,2,3,4,5))
+
+        // directly pass arguents without set parameter 
+        let prod2=function(){
+            result=1;
+           for(let i=1;i<arguments.length;i++){
+              result *=arguments[i];
+           }
+           return result;
+        }
+        console.log(prod2(1,2,3,4,5));
+
+
+        // generators
+        function* ingen(){
+            let index=1;
+            while(true){
+                yield index++;
+            }
+        }
+    const gen= ingen();
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+        console.log(gen.next().value);
+    </script>
+</body>
+</html>
